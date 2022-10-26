@@ -27,11 +27,20 @@ const Header = () => {
 };
 
 const MainHeader = styled.div`
-  padding: 0 32px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-right: 137px;
+`; // TODO: Fix margin-right
 
 const NavLink = styled.a`
   font-size: 1.125rem;
